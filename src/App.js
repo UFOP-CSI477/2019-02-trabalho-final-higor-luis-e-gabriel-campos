@@ -12,7 +12,7 @@ import PaginaInicial from './pages/HomePage';
 
 import AlunosRouter from './routers/StudentsRouter';
 import PatientsRouter from './routers/PatientsRouter';
-
+import DoctorsRouter from './routers/DoctorsRouter';
 
 import ErrorPage from './pages/ErrorPage.js';
 
@@ -108,6 +108,7 @@ export default class App extends Component {
                   <Switch>
                       <Route path="/alunos" component={AlunosRouter} />
                       <Route path="/patients" component={PatientsRouter} />
+                      <Route path="/doctors" component={DoctorsRouter}/>
                       <Route path="*" component={PaginaInicial} />} />
                   </Switch>
               </Content>

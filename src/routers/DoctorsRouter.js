@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route} from 'react-router-dom';
-
-// import RegisterStudents from '../register/StudentsRegister.js';
-// import UpdateStudents from '../update/UpdateStudents';
-// import PatientsBox from '../pages/StudentsPage.js';
 import CustomBox from '../pages/CustomPage.js';
 
-export default class PatientsRouter extends Component {
+export default class DoctorsRouter extends Component {
 
     constructor(){
         super();
@@ -29,6 +25,18 @@ export default class PatientsRouter extends Component {
                     label: "Telefone",
                     type: "text",
                     colConfig: "col-md-2"
+                },
+                {
+                    field: "crm",
+                    label: "CRM",
+                    type: "number",
+                    colConfig: "col-md-2"
+                },
+                {
+                    field: "specialty",
+                    label: "Especialidade",
+                    type: "text",
+                    colConfig: "col-md-6"
                 }
             ]
         }
@@ -38,20 +46,17 @@ export default class PatientsRouter extends Component {
         return (
             <div>
                 <Switch>
-                    <Route exact path="/patients/" 
+                    <Route exact path="/doctors/" 
                         component={()=>
                             <CustomBox
                                 forms={this.state.forms} 
-                                title="Pacientes"
-                                icon="fas fa-user-injured"
-                                route="/patients"
-                                headers={["Nome","Pai","Mãe"]}
+                                title="Médicos"
+                                icon="fas fa-user-md"
+                                route="/doctors"
+                                headers={["Nome","Nascimento","Telefone","CRM","Especialidade"]}
                             />
                         }
                     />
-                    {/* <Route exact path="/patients/" component={CustomPage} forms={this.state.forms} /> */}
-                    {/* <Route exact path="/alunos/registrar" component={RegisterStudents} /> */}
-                    {/* <Route exact path="/alunos/alterar/:id" component={UpdateStudents} /> */}
                 </Switch>
             </div>
         );

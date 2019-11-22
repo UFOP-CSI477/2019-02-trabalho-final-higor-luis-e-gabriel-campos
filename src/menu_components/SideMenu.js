@@ -16,6 +16,7 @@ export default class SideMenu extends Component {
 							</Link>
 						</li> */}
 						<ItemMenu label={"Pacientes"} name={"patients"} route="/patients" icon="user-injured" />
+						<ItemMenu label={"Médicos"} name={"doctors"} route="/doctors" icon="user-md"/>
 						<li className="treeview" onClick={this.props.handleLogout}>
 							<Link to='/'>
 								<i className="fas fa-sign-out-alt" />
