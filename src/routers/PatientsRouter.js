@@ -4,7 +4,7 @@ import { Switch, Route} from 'react-router-dom';
 // import RegisterStudents from '../register/StudentsRegister.js';
 // import UpdateStudents from '../update/UpdateStudents';
 // import PatientsBox from '../pages/StudentsPage.js';
-import CustomPage from '../pages/CustomPage.js';
+import CustomBox from '../pages/CustomPage.js';
 
 export default class PatientsRouter extends Component {
 
@@ -34,12 +34,12 @@ export default class PatientsRouter extends Component {
                 <Switch>
                     <Route exact path="/patients/" 
                         component={()=>
-                            <CustomPage 
+                            <CustomBox
                                 forms={this.state.forms} 
                                 title="Pacientes"
                                 icon="fas fa-user-injured"
                                 route="/patients"
-
+                                headers={["Nome","Pai","Mãe"]}
                             />
                         }
                     />
