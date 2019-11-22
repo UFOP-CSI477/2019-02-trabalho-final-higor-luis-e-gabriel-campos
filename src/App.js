@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Header from './base _components/Header';
-import MenuLateral from './base _components/SideMenu';
+import SideMenu from './menu_components/SideMenu';
 import Content from './base _components/Content';
 import Footer from './base _components/Footer';
 
@@ -90,7 +90,7 @@ export default class App extends Component {
         //             <div>
         //                 <Header enLocale={this.setEnLocale} ptbrLocale={this.setPtbrLocale} messages={this.state.messages} />
         //                 {this.handleRedirect()}
-        //                 <MenuLateral messages={this.state.messages} handleLogout={this.handleLogout.bind(this)} />
+        //                 <SideMenu messages={this.state.messages} handleLogout={this.handleLogout.bind(this)} />
         //                 <Content messages={this.state.messages}>
         //                     <PaginaInicial messages={this.state.messages} />
         //                 </Content>
@@ -102,9 +102,9 @@ export default class App extends Component {
         return (
             <div>
                 
-              <Header enLocale={this.setEnLocale} ptbrLocale={this.setPtbrLocale} messages={this.state.messages} />
-              <MenuLateral messages={this.state.messages} handleLogout={this.handleLogout.bind(this)} />
-              <Content messages={this.state.messages}>
+              <Header/>
+              <SideMenu  handleLogout={this.handleLogout.bind(this)} />
+              <Content>
                   <Switch>
                       <Route path="/alunos" component={AlunosRouter} />
                       <Route path="/patients" component={PatientsRouter} />
@@ -116,18 +116,4 @@ export default class App extends Component {
         );
     }
 }
-
-
-// import React, { Component } from 'react';
-// import { Switch, Route, Redirect } from 'react-router-dom';
-// import './App.css';
-// import Login from './login';
-
-// export default class App extends Component{
-//   render(){
-//     return (
-//       <Login handleLogin={console.log("oi")} />
-//     )
-//   }
-// }
 
