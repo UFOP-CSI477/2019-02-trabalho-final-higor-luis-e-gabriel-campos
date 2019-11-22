@@ -9,7 +9,10 @@ import Footer from './base _components/Footer';
 import Login from './pages/LoginPage';
 
 import PaginaInicial from './pages/HomePage';
+
 import AlunosRouter from './routers/StudentsRouter';
+import PatientsRouter from './routers/PatientsRouter';
+
 
 import ErrorPage from './pages/ErrorPage.js';
 
@@ -104,6 +107,7 @@ export default class App extends Component {
               <Content messages={this.state.messages}>
                   <Switch>
                       <Route path="/alunos" component={AlunosRouter} />
+                      <Route path="/patients" component={PatientsRouter} />
                       <Route path="*" component={PaginaInicial} />} />
                   </Switch>
               </Content>

@@ -15,10 +15,11 @@ export default class SideMenu extends Component {
 								<span>SRM</span>
 							</Link>
 						</li> */}
+						<ItemMenu label={"Pacientes"} name={"patients"} route="/patients" icon="user-injured" />
 						<li className="treeview" onClick={this.props.handleLogout}>
 							<Link to='/'>
-								<i className="fa fa-sign-out" />
-								<span>Logout</span>
+								<i className="fas fa-sign-out-alt" />
+								<span>    Logout</span>
 							</Link>
 						</li>
 					</ul>

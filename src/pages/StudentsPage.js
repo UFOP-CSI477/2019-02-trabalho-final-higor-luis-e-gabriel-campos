@@ -118,7 +118,7 @@ export default class StudentBox extends Component {
                                 <FormField label={"Matricula"} type="text" name="enrollment" id="enrollment" value={this.state.enrollmentNumber} onChange={this.changeField.bind(this, 'enrollmentNumber')} classes="col-md-2" />
                                 <FormField label={"Nome"} type="text" name="name" id="name" value={this.state.name} onChange={this.changeField.bind(this, 'name')} classes="col-md-10" />
 
-                                <div className={"form-group col-md-12"}>
+                                {/* <div className={"form-group col-md-12"}>
                                     <fieldset>
                                         <legend>Escola</legend>
                                         <div className="input-group">
@@ -128,17 +128,7 @@ export default class StudentBox extends Component {
                                             </div>
                                         </div>
                                     </fieldset>
-                                </div>
-                                <div className="form-group col-md-2">
-                                    <fieldset>
-                                        <legend>Turno</legend>
-                                        <select name="turn" id="turn" className="form-control" value={this.state.turn ? this.state.turn : ''} onChange={this.changeField.bind(this, "turn")}>
-                                            <option value={""} disabled>SELECIONE</option>
-                                            <option value={"1"}>TARDE</option>
-                                            <option value={"2"}>NOITE</option>
-                                        </select>
-                                    </fieldset>
-                                </div>
+                                </div> */}
                                 <div className="form-group col-md-2">
                                     <fieldset>
                                         <legend>SENTIDO</legend>
