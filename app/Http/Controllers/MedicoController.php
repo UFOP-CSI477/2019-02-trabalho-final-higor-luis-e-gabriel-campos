@@ -88,10 +88,11 @@ class MedicoController extends Controller
      */
     public function destroy(Medico $medico)
     {
-        $medico->delete();
+        
         if (Consulta::where('medico_id', $medico->id)->exists()) {
             return redirect()->route('medicos.index')->withStatus(__('Não foi possível excluir o medico pois ele tem consultas marcadas!'));
         }
+        $medico->delete();
         return redirect()->route('medicos.index')->withStatus(__('Medico excluido com sucesso.'));
     }
 }
