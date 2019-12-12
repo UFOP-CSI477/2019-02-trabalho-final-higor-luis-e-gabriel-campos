@@ -31,10 +31,10 @@
           <p>{{ __('Pacientes') }}</p>
         </a>
       </li>
-      <li class="nav-item{{ $activePage == 'patients-management' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('pacientes.index') }}">
+      <li class="nav-item{{ $activePage == 'medicos-management' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('medicos.index') }}">
           <i class="material-icons">library_books</i>
-          <p>{{ __('Pacientes') }}</p>
+          <p>{{ __('Medicos') }}</p>
         </a>
       </li>
     </ul>
