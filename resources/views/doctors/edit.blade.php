@@ -5,12 +5,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-            <form method="post" action="{{ route('medicos.update', $medico) }}" autocomplete="off" class="form-horizontal">
+                <form method="post" action="{{ route('medicos.update', $medico) }}" autocomplete="off" class="form-horizontal">
                     @csrf
                     @method('put')
 
                     <div class="card ">
-                        <div class="card-header card-header-primary" >
+                        <div class="card-header card-header-primary">
                             <h4 class="card-title">{{ __('Editar Médico') }}</h4>
                             <p class="card-category"></p>
                         </div>
@@ -68,8 +68,8 @@
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
-                            <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
-                        </div>
+                                <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                            </div>
                         </div>
                 </form>
             </div>

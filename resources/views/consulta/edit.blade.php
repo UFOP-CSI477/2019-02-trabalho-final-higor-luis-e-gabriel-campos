@@ -18,7 +18,7 @@
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="data" class="col-sm-2 col-form-label">{{ __('Data') }}</label>
                                 <div class="col-md-5">
-                            <input value="{{$consulta->data}}" id="data" name="data" type="date" class="form-control" required>
+                                    <input value="{{$consulta->data}}" id="data" name="data" type="date" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">

@@ -66,9 +66,9 @@ class ConsultaController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\View\View
      */
-    public function edit(Medico $medico)
+    public function edit(Consulta $consulta,Medico $medico, Paciente $paciente)
     {
-        return view('doctors.edit', compact('medico'));
+        return view('consulta.edit', compact('consulta'),compact('$paciente'),compact('medico'));
     }
 
     /**
@@ -100,9 +100,6 @@ class ConsultaController extends Controller
     public function destroy(Consulta $consulta)
     {
         $consulta->delete();
-        if (Consulta::where('id', $consulta->id)->exists()) {
-            return redirect()->route('consulta.index')->withStatus(__('Não foi possível excluir o medico pois ele tem consultas marcadas!'));
-        }
         return redirect()->route('consulta.index')->withStatus(__('Consulta excluido com sucesso.'));
     }
 }
