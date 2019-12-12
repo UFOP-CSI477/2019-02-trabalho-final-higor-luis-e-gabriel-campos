@@ -75,7 +75,7 @@ class MedicoController extends Controller
         $newMedico->crm = $request->crm;
         $newMedico->nome = $request->nome;
         $newMedico->nascimento = $request->nascimento;
-        $newMedico->especializacao = $request->especializaxao;
+        $newMedico->especializacao = $request->especializacao;
         $newMedico->telefone = $request->telefone;
         $newMedico->save();
         return redirect()->route('medicos.index')->withStatus(__('Medico editado com sucesso.'));

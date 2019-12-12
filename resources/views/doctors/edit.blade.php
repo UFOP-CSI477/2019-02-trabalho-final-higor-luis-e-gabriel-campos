@@ -1,74 +1,79 @@
-@extends('layouts.app', ['activePage' => 'doctors-management', 'titlePage' => __('Gerenciar Medicos')])
+@extends('layouts.app', ['activePage' => 'doctors-management', 'titlePage' => __('Gerenciar Médicos')])
 
 @section('content')
-  <div class="content">
+<div class="content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <form method="post" action="{{ route('user.update', $user) }}" autocomplete="off" class="form-horizontal">
-            @csrf
-            @method('put')
+        <div class="row">
+            <div class="col-md-12">
+            <form method="post" action="{{ route('medicos.update', $medico) }}" autocomplete="off" class="form-horizontal">
+                    @csrf
+                    @method('put')
 
-            <div class="card ">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title">{{ __('Edit User') }}</h4>
-                <p class="card-category"></p>
-              </div>
-              <div class="card-body ">
-                <div class="row">
-                  <div class="col-md-12 text-right">
-                      <a href="{{ route('user.index') }}" class="btn btn-sm btn-primary">{{ __('Back to list') }}</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <label class="col-sm-2 col-form-label">{{ __('Name') }}</label>
-                  <div class="col-sm-7">
-                    <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                      <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" id="input-name" type="text" placeholder="{{ __('Name') }}" value="{{ old('name', $user->name) }}" required="true" aria-required="true"/>
-                      @if ($errors->has('name'))
-                        <span id="name-error" class="error text-danger" for="input-name">{{ $errors->first('name') }}</span>
-                      @endif
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <label class="col-sm-2 col-form-label">{{ __('Email') }}</label>
-                  <div class="col-sm-7">
-                    <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
-                      <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="input-email" type="email" placeholder="{{ __('Email') }}" value="{{ old('email', $user->email) }}" required />
-                      @if ($errors->has('email'))
-                        <span id="email-error" class="error text-danger" for="input-email">{{ $errors->first('email') }}</span>
-                      @endif
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <label class="col-sm-2 col-form-label" for="input-password">{{ __(' Password') }}</label>
-                  <div class="col-sm-7">
-                    <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
-                      <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" input type="password" name="password" id="input-password" placeholder="{{ __('Password') }}" />
-                      @if ($errors->has('password'))
-                        <span id="name-error" class="error text-danger" for="input-name">{{ $errors->first('password') }}</span>
-                      @endif
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <label class="col-sm-2 col-form-label" for="input-password-confirmation">{{ __('Confirm Password') }}</label>
-                  <div class="col-sm-7">
-                    <div class="form-group">
-                      <input class="form-control" name="password_confirmation" id="input-password-confirmation" type="password" placeholder="{{ __('Confirm Password') }}" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer ml-auto mr-auto">
-                <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
-              </div>
+                    <div class="card ">
+                        <div class="card-header card-header-primary" >
+                            <h4 class="card-title">{{ __('Editar Médico') }}</h4>
+                            <p class="card-category"></p>
+                        </div>
+                        <div class="card-body ">
+                            <div class="row" style="padding-bottom: 10px">
+                                <label for="crm" class="col-sm-2 col-form-label">{{ __('CRM') }}</label>
+                                <div class="col-md-9">
+                                    <input value="{{$medico->crm}}" id="crm" name="crm" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px">
+                                <label for="nome" class="col-sm-2 col-form-label">{{ __('Nome') }}</label>
+                                <div class="col-md-9">
+                                    <input value="{{$medico->nome}}" name="nome" id="nome" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px">
+                                <label for="nascimento" class="col-sm-2 col-form-label">{{ __('Nascimento') }}</label>
+                                <div class="col-md-9">
+                                    <input value="{{$medico->nascimento}}" id="nascimento" name="nascimento" type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px">
+                                <label class="col-sm-2 col-form-label">{{ __('Especialização') }}</label>
+                                <div class="col-md-2">
+                                    <select id="especializacao" name="especializacao" style="height: 95%" id="especializacao" class="form-control" name="estado" required>
+                                        <option value="0" selected disabled>Especializações</option>
+                                        <option value="Anestesiologia">Anestesiologia</option>
+                                        <option value="Cancerologia (oncologia)">Cancerologia (oncologia)</option>
+                                        <option value="Cardiologia">Cardiologia</option>
+                                        <option value="Cirurgia geral">Cirurgia geral</option>
+                                        <option value="Cirurgia plástica">Cirurgia plástica</option>
+                                        <option value="Coloproctologia">Coloproctologia</option>
+                                        <option value="Dermatologia">Dermatologia</option>
+                                        <option value="Endocrinologia">Endocrinologia</option>
+                                        <option value="Gastroenterologia">Gastroenterologia</option>
+                                        <option value="Genética médica">Genética médica</option>
+                                        <option value="Geriatria">Geriatria</option>
+                                        <option value="Ginecologia e obstetrícia">Ginecologia e obstetrícia</option>
+                                        <option value="Hematologia">Hematologia</option>
+                                        <option value="Mastologia">Mastologia</option>
+                                        <option value="Neurologia">Neurologia</option>
+                                        <option value="Oftalmologia">Oftalmologia</option>
+                                        <option value="Ortopedia">Ortopedia</option>
+                                        <option value="Pediatria">Pediatria</option>
+                                        <option value="Psiquiatria">Psiquiatria</option>
+                                        <option value="Urologia">Urologia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px">
+                                <label for="telefone" class="col-sm-2 col-form-label">{{ __('Telefone') }}</label>
+                                <div class="col-md-9">
+                                    <input value="{{$medico->telefone}}" id="telefone" name="telefone" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="card-footer ml-auto mr-auto">
+                            <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                        </div>
+                        </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 @endsection

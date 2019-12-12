@@ -38,26 +38,26 @@
                                 <div class="col-md-2">
                                     <select id="especializacao" name="especializacao" style="height: 95%" id="especializacao" class="form-control" name="estado" required>
                                         <option value="0" selected disabled>Especializações</option>
-                                        <option value="AC">Anestesiologia</option>
-                                        <option value="AL">Cancerologia (oncologia)</option>
-                                        <option value="AP">Cardiologia</option>
-                                        <option value="AM">Cirurgia geral</option>
-                                        <option value="BA">Cirurgia plástica</option>
-                                        <option value="CE">Coloproctologia</option>
-                                        <option value="DF">Dermatologia</option>
-                                        <option value="ES">Endocrinologia</option>
-                                        <option value="GO">Gastroenterologia</option>
-                                        <option value="MA">Genética médica</option>
-                                        <option value="MT">Geriatria</option>
-                                        <option value="MS">Ginecologia e obstetrícia</option>
-                                        <option value="MG">Hematologia</option>
-                                        <option value="PA">Mastologia</option>
-                                        <option value="PB">Neurologia</option>
-                                        <option value="PR">Oftalmologia</option>
-                                        <option value="PE">Ortopedia</option>
-                                        <option value="PI">Pediatria</option>
-                                        <option value="RJ">Psiquiatria</option>
-                                        <option value="RN">Urologia</option>
+                                        <option value="Anestesiologia">Anestesiologia</option>
+                                        <option value="Cancerologia (oncologia)">Cancerologia (oncologia)</option>
+                                        <option value="Cardiologia">Cardiologia</option>
+                                        <option value="Cirurgia geral">Cirurgia geral</option>
+                                        <option value="Cirurgia plástica">Cirurgia plástica</option>
+                                        <option value="Coloproctologia">Coloproctologia</option>
+                                        <option value="Dermatologia">Dermatologia</option>
+                                        <option value="Endocrinologia">Endocrinologia</option>
+                                        <option value="Gastroenterologia">Gastroenterologia</option>
+                                        <option value="Genética médica">Genética médica</option>
+                                        <option value="Geriatria">Geriatria</option>
+                                        <option value="Ginecologia e obstetrícia">Ginecologia e obstetrícia</option>
+                                        <option value="Hematologia">Hematologia</option>
+                                        <option value="Mastologia">Mastologia</option>
+                                        <option value="Neurologia">Neurologia</option>
+                                        <option value="Oftalmologia">Oftalmologia</option>
+                                        <option value="Ortopedia">Ortopedia</option>
+                                        <option value="Pediatria">Pediatria</option>
+                                        <option value="Psiquiatria">Psiquiatria</option>
+                                        <option value="Urologia">Urologia</option>
                                     </select>
                                 </div>
                             </div>
