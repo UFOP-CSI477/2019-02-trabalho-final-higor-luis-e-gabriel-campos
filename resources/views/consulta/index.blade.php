@@ -52,29 +52,29 @@
                                     @foreach($consultas as $consulta)
                                     <tr>
                                         <td>
-                                            {{ $consulta->id }}
+                                            {{ $consulta->idconsulta }}
                                         </td>
                                         <td>
                                             {{ $consulta->data }}
                                         </td>
                                         <td>
-                                            {{ $consulta->medico_id }}
+                                            {{ $consulta->medico }}
                                         </td>
                                         <td>
-                                            {{ $consulta->paciente_id }}
+                                            {{ $consulta->paciente}}
                                         </td>
                                         <td>
                                             {{ $consulta->valor }}
                                         </td>
                                         <td>
-                                            {{ $consulta->descicao }}
+                                            {{ $consulta->descricao }}
                                         </td>
                                         <td class="td-actions text-right">
-                                            <form action="{{ route('consulta.destroy', $consulta) }}" method="post">
+                                            <form action="{{ route('consulta.destroy', $consulta->idconsulta) }}" method="post">
                                                 @csrf
                                                 @method('delete')
 
-                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('consulta.edit', $consulta) }}" data-original-title="" title="">
+                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('consulta.edit', $consulta->idconsulta) }}" data-original-title="" title="">
                                                     <i class="material-icons">edit</i>
                                                     <div class="ripple-container"></div>
                                                 </a>

@@ -10,25 +10,31 @@
                     @method('post')
 
                     <div class="card ">
-                        <div class="card-header card-header-primary" >
+                        <div class="card-header card-header-primary">
                             <h4 class="card-title">{{ __('Adicionar Consulta') }}</h4>
                             <p class="card-category"></p>
                         </div>
                         <div class="card-body ">
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="data" class="col-sm-2 col-form-label">{{ __('Data') }}</label>
-                                <div class="col-md-9">
+                                <div class="col-md-5">
                                     <input id="data" name="data" type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px">
+                                <label for="data" class="col-sm-2 col-form-label">{{ __('Hora') }}</label>
+                                <div class="col-md-5">
+                                    <input id="hora" name="hora" type="time" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
                                 <label class="col-sm-2 col-form-label">{{ __('Médico') }}</label>
                                 <div class="col-md-2">
-                                    <select id="medico" name="medico_id" style="height: 95%" id="medico" class="form-control"  required>
-                                    <option value="0" selected disabled>Médicos</option>
-                                    @foreach ($medicos as $medico)
+                                    <select id="medico" name="medico_id" style="height: 95%" id="medico" class="form-control" required>
+                                        <option value="0" selected disabled>Médicos</option>
+                                        @foreach ($medicos as $medico)
                                         <option value="{{$medico->id}}">{{$medico->nome}}</option>
-                                     @endforeach
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -36,10 +42,10 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Paciente') }}</label>
                                 <div class="col-md-2">
                                     <select id="paciente" name="paciente_id" style="height: 95%" id="paciente" class="form-control" required>
-                                    <option value="0" selected disabled>Pacientes</option>
-                                    @foreach ($pacientes as $paciente)
+                                        <option value="0" selected disabled>Pacientes</option>
+                                        @foreach ($pacientes as $paciente)
                                         <option value="{{$paciente->id}}">{{$paciente->nome}}</option>
-                                     @endforeach
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

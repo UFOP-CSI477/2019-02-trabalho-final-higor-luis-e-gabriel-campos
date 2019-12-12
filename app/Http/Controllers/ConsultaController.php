@@ -17,7 +17,15 @@ class ConsultaController extends Controller
      */
     public function index(Consulta $model)
     {
-        return view('consulta.index', ['consultas' => $model->paginate(15)]);
+        $consulta = Consulta::join('medicos', 'consultas.medico_id', '=', 'medicos.id')
+            ->join('pacientes', 'consultas.paciente_id', '=', 'pacientes.id')
+            ->select(['consultas.id AS idconsulta', 'medicos.id AS idmedico','pacientes.id AS idpaciente' , 'valor', 'pacientes.nome AS paciente', 'medicos.nome AS medico', 'descricao','data'])
+            ->orderBy('data', 'ASC')->get();
+        // $consulta = Consulta::join('paciente','requests.subject_id','=','subjects.id')
+        //     ->where('user_id',auth()->user()->id)
+        //     ->orderBy('date')->get();
+
+        return view('consulta.index', ['consultas' => $consulta]);
     }
 
     /**
@@ -42,7 +50,7 @@ class ConsultaController extends Controller
     public function store(Request $request, Consulta $consulta)
     {
         $consulta = new Consulta;
-        $consulta->data = $request->data;
+        $consulta->data = "{$request->data} {$request->hora}";
         $consulta->medico_id = $request->medico_id;
         $consulta->paciente_id = $request->paciente_id ;
         $consulta->valor = $request->valor;

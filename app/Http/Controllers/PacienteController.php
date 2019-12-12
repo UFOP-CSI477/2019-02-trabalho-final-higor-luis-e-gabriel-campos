@@ -88,10 +88,11 @@ class PacienteController extends Controller
      */
     public function destroy(Paciente $paciente)
     {
-        $paciente->delete();
+        
         if (Consulta::where('paciente_id', $paciente->id)->exists()) {
             return redirect()->route('pacientes.index')->withStatus(__('Não foi possível excluir o paciente pois ele tem consultas marcadas!'));
         }
+        $paciente->delete();
         return redirect()->route('pacientes.index')->withStatus(__('Paciente excluido com sucesso.'));
     }
 }
