@@ -37,6 +37,12 @@
           <p>{{ __('Medicos') }}</p>
         </a>
       </li>
+      <li class="nav-item{{ $activePage == 'consulta-management' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('consulta.index') }}">
+          <i class="material-icons">library_books</i>
+          <p>{{ __('Consultas') }}</p>
+        </a>
+      </li>
     </ul>
   </div>
 </div>
