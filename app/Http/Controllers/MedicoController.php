@@ -39,11 +39,11 @@ class MedicoController extends Controller
     public function store(Request $request, Medico $medico)
     {
         $medico = new Medico;
-        // $medico->nome = $request->nome;
-        // $medico->telefone = $request->telefone;
-        // $medico->nascimento = $request->data;
-        // $medico->endereco = "{$request->rua}, {$request->numero}, {$request->cidade}, {$request->estado}";
-        // $medico->cpf = $request->cpf;
+        $medico->crm = $request->crm;
+        $medico->nome = $request->nome;
+        $medico->nascimento = $request->nascimento;
+        $medico->especializacao = $request->especializacao;
+        $medico->telefone = $request->telefone;
         $medico->save();
 
         return redirect()->route('medicos.index')->withStatus(__('Medico criado com sucesso.'));
@@ -72,11 +72,11 @@ class MedicoController extends Controller
     {
 
         $newMedico = Medico::findOrFail($medico->id);
-        // $newMedico->nome = $request->nome;
-        // $newMedico->telefone = $request->telefone;
-        // $newMedico->nascimento = $request->data;
-        // $newMedico->endereco = "{$request->rua}, {$request->numero}, {$request->cidade}, {$request->estado}";
-        // $newMedico->telefone = $request->cpf;
+        $newMedico->crm = $request->crm;
+        $newMedico->nome = $request->nome;
+        $newMedico->nascimento = $request->nascimento;
+        $newMedico->especializacao = $request->especializaxao;
+        $newMedico->telefone = $request->telefone;
         $newMedico->save();
         return redirect()->route('medicos.index')->withStatus(__('Medico editado com sucesso.'));
     }
