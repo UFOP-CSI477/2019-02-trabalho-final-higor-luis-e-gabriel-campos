@@ -31,7 +31,7 @@
           <p>{{ __('Pacientes') }}</p>
         </a>
       </li>
-      <li class="nav-item{{ $activePage == 'medicos-management' ? ' active' : '' }}">
+      <li class="nav-item{{ $activePage == 'doctors-management' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('medicos.index') }}">
           <i class="material-icons">library_books</i>
           <p>{{ __('Medicos') }}</p>

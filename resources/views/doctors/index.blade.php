@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'patients-management', 'titlePage' => __('User Management')])
+@extends('layouts.app', ['activePage' => 'doctors-management', 'titlePage' => __('Gerenciar Médicos')])
 
 @section('content')
 <div class="content">
@@ -70,11 +70,11 @@
                                             {{ $medico->telefone }}
                                         </td>
                                         <td class="td-actions text-right">
-                                            <form action="{{ route('doctors.destroy', $medico) }}" method="post">
+                                            <form action="{{ route('medicos.destroy', $medico) }}" method="post">
                                                 @csrf
                                                 @method('delete')
 
-                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('doctors.edit', $medico) }}" data-original-title="" title="">
+                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('medicos.edit', $medico) }}" data-original-title="" title="">
                                                     <i class="material-icons">edit</i>
                                                     <div class="ripple-container"></div>
                                                 </a>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 text-right">
-                                <a href="{{ route('doctors.create') }}" class="btn btn-sm btn-primary">{{ __('Adicionar Médico') }}</a>
+                                <a href="{{ route('medicos.create') }}" class="btn btn-sm btn-primary">{{ __('Adicionar Médico') }}</a>
                             </div>
                         </div>
                     </div>

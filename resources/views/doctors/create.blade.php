@@ -1,11 +1,11 @@
-@extends('layouts.app', ['activePage' => 'patients-management', 'titlePage' => __('User Management')])
+@extends('layouts.app', ['activePage' => 'doctors-management', 'titlePage' => __('Gerenciar Médicos')])
 
 @section('content')
 <div class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form method="post" action="{{ route('doctors.store') }}" autocomplete="off" class="form-horizontal">
+                <form method="post" action="{{ route('medicos.store') }}" autocomplete="off" class="form-horizontal">
                     @csrf
                     @method('post')
 
@@ -30,7 +30,7 @@
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="nascimento" class="col-sm-2 col-form-label">{{ __('Nascimento') }}</label>
                                 <div class="col-md-9">
-                                    <input id="nascimento" name="nascimento" type="nascimento" class="form-control" required>
+                                    <input id="nascimento" name="nascimento" type="date" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
-                                <a href="{{ route('doctors.index') }}" class="btn btn-primary">{{ __('Voltar para a lista') }}</a>
+                                <a href="{{ route('medicos.index') }}" class="btn btn-primary">{{ __('Voltar para a lista') }}</a>
                                 <button type="submit" class="btn btn-primary">{{ __('Cadastrar') }}</button>
                             </div>
                         </div>
