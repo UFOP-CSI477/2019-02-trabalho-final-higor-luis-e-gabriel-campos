@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-primary">
+                    <div class="card-header card-header-primary bg-card">
                         <h4 class="card-title ">{{ __('Consultas') }}</h4>
                         <p class="card-category"> {{ __('Aqui você pode gerenciar as consultas') }}</p>
                     </div>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 text-right">
-                                <a href="{{ route('consulta.create') }}" class="btn btn-sm btn-primary">{{ __('Adicionar Consulta') }}</a>
+                                <a href="{{ route('consulta.create') }}" class="btn btn-sm btn-primary btn-bg">{{ __('Adicionar Consulta') }}</a>
                             </div>
                         </div>
                     </div>
