@@ -79,17 +79,17 @@ class ConsultaController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
 
-    public function update(Request $request, Medico $medico)
+    public function update(Request $request, Consulta $consulta)
     {
 
-        $newMedico = Medico::findOrFail($medico->id);
-        $newMedico->crm = $request->crm;
-        $newMedico->nome = $request->nome;
-        $newMedico->nascimento = $request->nascimento;
-        $newMedico->especializacao = $request->especializacao;
-        $newMedico->descricao = $request->descricao;
-        $newMedico->save();
-        return redirect()->route('medicos.index')->withStatus(__('Medico editado com sucesso.'));
+        $newConsulta = Consulta::findOrFail($consulta->id);
+        $newConsulta->data = "{$request->data} {$request->hora}";
+        $newConsulta->medico_id = $request->medico_id;
+        $newConsulta->paciente_id = $request->paciente_id;
+        $newConsulta->valor = $request->valor;
+        $newConsulta->descricao = $request->descricao;
+        $newConsulta->save();
+        return redirect()->route('consultas.index')->withStatus(__('Consulta editada com sucesso.'));
     }
     /**
      * Remove the specified user from storage
@@ -97,12 +97,12 @@ class ConsultaController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Medico $medico)
+    public function destroy(Consulta $consulta)
     {
-        $medico->delete();
-        if (Consulta::where('medico_id', $medico->id)->exists()) {
-            return redirect()->route('medicos.index')->withStatus(__('Não foi possível excluir o medico pois ele tem consultas marcadas!'));
+        $consulta->delete();
+        if (Consulta::where('id', $consulta->id)->exists()) {
+            return redirect()->route('consulta.index')->withStatus(__('Não foi possível excluir o medico pois ele tem consultas marcadas!'));
         }
-        return redirect()->route('medicos.index')->withStatus(__('Medico excluido com sucesso.'));
+        return redirect()->route('consulta.index')->withStatus(__('Consulta excluido com sucesso.'));
     }
 }
