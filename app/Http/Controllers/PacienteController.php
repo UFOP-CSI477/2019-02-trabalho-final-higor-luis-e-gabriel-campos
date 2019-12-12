@@ -76,7 +76,7 @@ class PacienteController extends Controller
         $newPaciente->telefone = $request->telefone;
         $newPaciente->nascimento = $request->data;
         $newPaciente->endereco = "{$request->rua}, {$request->numero}, {$request->cidade}, {$request->estado}";
-        $newPaciente->telefone = $request->cpf;
+        $newPaciente->cpf = $request->cpf;
         $newPaciente->save();
         return redirect()->route('pacientes.index')->withStatus(__('Paciente editado com sucesso.'));
     }
