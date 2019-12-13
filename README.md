@@ -29,7 +29,7 @@
 ### 3. Restrições
 
   * Não há mascaras para os inputs;
-  * Não há tratamento de dados caso estes sejam inseridos no formato errado
+  * Não há tratamento de dados em alguns inputs caso estes sejam inseridos no formato errado ou de forma errada
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
