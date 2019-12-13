@@ -51,8 +51,13 @@
   4. Obs: uma cópia do .env utilizado no desenvolvimento está contida no arquivo .env.example
   
   [inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/inicio.png "Tela de Inicio"
+
   [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/login.png "Tela de Login"
+
   [pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/pacientes.png"Tela de Pacientes"
+
   [medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/medicos.png "Tela de Médicos"
+
   [consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/consultas.png "Tela de Consultas"
+  
   [crud]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/crud.png "CRUD"
