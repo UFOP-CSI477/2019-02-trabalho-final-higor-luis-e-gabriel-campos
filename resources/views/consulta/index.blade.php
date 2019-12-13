@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-primary bg-card">
+                    <div class="card-header card-header-primary bg-card card-bg">
                         <h4 class="card-title ">{{ __('Consultas') }}</h4>
                         <p class="card-category"> {{ __('Aqui você pode gerenciar as consultas') }}</p>
                     </div>

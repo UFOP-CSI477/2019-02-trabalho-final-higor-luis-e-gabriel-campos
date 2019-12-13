@@ -68,7 +68,7 @@ class ConsultaController extends Controller
      */
     public function edit(Consulta $consulta,Medico $medico, Paciente $paciente)
     {
-        return view('consulta.edit', compact('consulta'),compact('$paciente'),compact('medico'));
+        return view('consulta.edit', compact('consulta'),compact('paciente'),compact('medico'));
     }
 
     /**

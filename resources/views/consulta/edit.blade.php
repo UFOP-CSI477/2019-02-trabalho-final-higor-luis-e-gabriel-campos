@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
-                                <label for="data" class="col-sm-2 col-form-label">{{ __('Hora') }}</label>
+                                <label for="hora" class="col-sm-2 col-form-label">{{ __('Hora') }}</label>
                                 <div class="col-md-5">
                                     <input value="{{consulta->hora}}" id="hora" name="hora" type="time" class="form-control" required>
                                 </div>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
-                                <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                                <button type="submit" class="btn btn-primary btn-bg">{{ __('Save') }}</button>
                             </div>
                         </div>
                 </form>
