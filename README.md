@@ -50,9 +50,9 @@
   3. Acessar diretamente a rota `localhost:8000/register` para cadastrar um usuário
   4. Obs: uma cópia do .env utilizado no desenvolvimento está contida no arquivo .env.example
   
-  [Inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/Prototipos/inicio.png "Tela de Inicio"
-  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/login.png "Tela de Login"
-  [Pacientes]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/pacientes.png "Tela de Pacientes"
-  [Medicos]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/medicos.png "Tela de Médicos"
-  [Consultas]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/consultas.png "Tela de Consultas"
+  [Inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/inicio.png "Tela de Inicio"
+  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/login.png "Tela de Login"
+  [Pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/pacientes.png"Tela de Pacientes"
+  [Medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/medicos.png "Tela de Médicos"
+  [Consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/consultas.png "Tela de Consultas"
   [CRUD]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/crud.png "CRUD"
