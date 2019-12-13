@@ -6,14 +6,14 @@
 <!-- Descrever um resumo sobre o trabalho. -->
 
 ### Resumo
+Este documento é uma apresentação da proposta do trabalho final, desenvolvido apra a disciplina CSI477 - Sistemas Web I. Foi desenvolvido uma plataforma para cadastro de consultas médicas. A aplicação foi desenvolvida utilizando Laravel e MySQL.
 
-	Este documento é uma apresentação da proposta do trabalho final, desenvolvido apra a disciplina CSI477 - Sistemas Web I. Foi desenvolvido uma plataforma para cadastro de consultas médicas. A aplicação foi desenvolvida utilizando Laravel e MySQL.
-
+	
 <!-- Apresentar o tema. -->
 ### 1. Tema
-
-	O trabalho em questão tem como proposta realizar o cadastro de consultas médicas de forma simples, fazer as operações CRUD em pacientes, médicos e consultas, além de visualizar relatórios de cada uma dessas entidades. 
-
+Este possui funcionalidades:
+  
+   O trabalho em questão tem como proposta realizar o cadastro de consultas médicas de forma simples, fazer as operações CRUD em pacientes, médicos e consultas, além de visualizar relatórios de cada uma dessas entidades
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
@@ -35,13 +35,12 @@
 ### 4. Protótipo
 
   A seguir estão os protótipos para:
-  * Listagem de serviços: ![alt-text][servicos]
-  * Perfil dos usuários: ![alt-text][perfil]
-  * Criação de publicações: ![alt-text][publicacao]
-  * Respostas à publicação: ![alt-text][respostas]
-  * Avaliação do serviço prestado: ![alt-text][feedback]
-  * Cadastro de usuários: ![alt-text][cadastro]
-  * Login de usuários: ![alt-text][login]
+  * Tela de Inicio ![alt-text][inicio]
+  * Tela de Login: ![alt-text][login]
+  * Tela de Pacientes: ![alt-text][pacientes]
+  * Tela de Médicos: ![alt-text][medicos]
+  * Tela de Consultas: ![alt-text][consultas]
+  * CRUD: ![alt-text][crud]
 
   ### 5. Configuração do Ambiente
 
@@ -52,12 +51,12 @@
   
   [inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/inicio.png "Tela de Inicio"
 
-  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/login.png "Tela de Login"
+  [login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/login.png "Tela de Login"
 
   [pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/pacientes.png"Tela de Pacientes"
 
   [medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/medicos.png "Tela de Médicos"
 
   [consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/consultas.png "Tela de Consultas"
-  
+
   [crud]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/crud.png "CRUD"
