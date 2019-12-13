@@ -66,9 +66,16 @@ class ConsultaController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\View\View
      */
-    public function edit(Consulta $consulta,Medico $medico, Paciente $paciente)
+    public function edit(Consulta $consulta,$data)
     {
-        return view('consulta.edit', compact('consulta'),compact('paciente'),compact('medico'));
+        $teste = Consulta::find($data);
+        $datetime = explode(" ",$teste->data);
+        $data = $datetime[0];
+        $hora = $datetime[1];
+        $medicos = Medico::orderBy('nome')->get();
+        $pacientes = Paciente::orderBy('nome')->get();
+        // dd($teste); 
+        return view('consulta.edit', ['hora'=> $hora, 'data'=> $data,'medicos'=> $medicos, 'pacientes' => $pacientes, 'teste' => $teste]);
     }
 
     /**
@@ -76,20 +83,20 @@ class ConsultaController extends Controller
      *
      * @param  \App\Http\Requests\UserRequest  $request
      * @param  \App\User  $user
-     * @return \Illuminate\Http\RedirectResponse
+     * @return \Illuminate\Http\RedirectResponse 
      */
 
-    public function update(Request $request, Consulta $consulta)
+    public function update(Request $request,$id)
     {
-
-        $newConsulta = Consulta::findOrFail($consulta->id);
+        // dd($id);
+        $newConsulta = Consulta::findOrFail($id);
         $newConsulta->data = "{$request->data} {$request->hora}";
         $newConsulta->medico_id = $request->medico_id;
         $newConsulta->paciente_id = $request->paciente_id;
         $newConsulta->valor = $request->valor;
         $newConsulta->descricao = $request->descricao;
         $newConsulta->save();
-        return redirect()->route('consultas.index')->withStatus(__('Consulta editada com sucesso.'));
+        return redirect()->route('consulta.index')->withStatus(__('Consulta editada com sucesso.'));
     }
     /**
      * Remove the specified user from storage

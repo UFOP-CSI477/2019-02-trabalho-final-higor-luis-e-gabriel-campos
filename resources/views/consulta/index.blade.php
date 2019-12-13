@@ -74,7 +74,7 @@
                                                 @csrf
                                                 @method('delete')
 
-                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('consulta.edit', $consulta->idconsulta,$consulta->medico,$consulta->paciente) }}" data-original-title="" title="">
+                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('consulta.edit', $consulta->idconsulta,$consulta) }}" data-original-title="" title="">
                                                     <i class="material-icons">edit</i>
                                                     <div class="ripple-container"></div>
                                                 </a>

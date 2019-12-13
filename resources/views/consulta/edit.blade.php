@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form method="post" action="{{ route('consulta.update', $consulta) }}" autocomplete="off" class="form-horizontal">
+                <form method="post" action="{{ route('consulta.update', $teste->id,$teste->id) }}" autocomplete="off" class="form-horizontal">
                     @csrf
                     @method('put')
 
@@ -18,13 +18,13 @@
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="data" class="col-sm-2 col-form-label">{{ __('Data') }}</label>
                                 <div class="col-md-5">
-                                    <input value="{{$consulta->data}}" id="data" name="data" type="date" class="form-control" required>
+                                    <input value="{{$data}}" id="data" name="data" type="date" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="hora" class="col-sm-2 col-form-label">{{ __('Hora') }}</label>
                                 <div class="col-md-5">
-                                    <input value="{{consulta->hora}}" id="hora" name="hora" type="time" class="form-control" required>
+                                    <input value="{{$hora}}" id="hora" name="hora" type="time" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
@@ -52,13 +52,13 @@
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="valor" class="col-sm-2 col-form-label">{{ __('Valor') }}</label>
                                 <div class="col-md-9">
-                                    <input value="{{consulta->valor}}" id="valor" name="valor" type="text" class="form-control" required>
+                                    <input value="{{$teste->valor}}" id="valor" name="valor" type="text" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom: 10px">
                                 <label for="descricao" class="col-sm-2 col-form-label">{{ __('Descrição') }}</label>
                                 <div class="col-md-9">
-                                    <input value="{{consulta->descricao}}" id="descricao" name="descricao" type="text" class="form-control" required>
+                                    <input value="{{$teste->descricao}}" id="descricao" name="descricao" type="text" class="form-control" required>
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
