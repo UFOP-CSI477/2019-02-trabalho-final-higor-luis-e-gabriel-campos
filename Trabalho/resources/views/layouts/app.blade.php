@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
+    <title>{{ __('Easy Appointment') }}</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/fav-icon.ico">
+    <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.ico">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

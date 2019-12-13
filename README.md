@@ -1,78 +1,58 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# **CSI477-2019-02 - Proposta de Trabalho Final**
+## *Grupo: Gabriel Nepomuceno Siqueira Campos e Higor Luis Pereira Guimarães*
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+--------------
 
-## About Laravel
+<!-- Descrever um resumo sobre o trabalho. -->
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Resumo
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+	Este documento é uma apresentação da proposta do trabalho final, desenvolvido apra a disciplina CSI477 - Sistemas Web I. Foi desenvolvido uma plataforma para cadastro de consultas médicas. A aplicação foi desenvolvida utilizando Laravel e MySQL.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<!-- Apresentar o tema. -->
+### 1. Tema
 
-## Learning Laravel
+	O trabalho em questão tem como proposta realizar o cadastro de consultas médicas de forma simples, fazer as operações CRUD em pacientes, médicos e consultas, além de visualizar relatórios de cada uma dessas entidades. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<!-- Descrever e limitar o escopo da aplicação. -->
+### 2. Escopo
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  Este possui funcionalidades:
+  
+   * Criar, editar, apagar e visualizar dados dos pacientes;
+   * Criar, editar, apagar e visualizar dados dos médicos;
+   * Criar, editar, apagar e visualizar dados das consultas;
+   * Visualizar histórico de consultas do paciente;
+   * Visualizar histórico de consultas do médico;
 
-## Laravel Sponsors
+<!-- Apresentar restrições de funcionalidades e de escopo. -->
+### 3. Restrições
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+  * Não há mascaras para os inputs;
+  * Não há tratamento de dados caso estes sejam inseridos no formato errado
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+<!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
+### 4. Protótipo
 
-## Contributing
+  A seguir estão os protótipos para:
+  * Listagem de serviços: ![alt-text][servicos]
+  * Perfil dos usuários: ![alt-text][perfil]
+  * Criação de publicações: ![alt-text][publicacao]
+  * Respostas à publicação: ![alt-text][respostas]
+  * Avaliação do serviço prestado: ![alt-text][feedback]
+  * Cadastro de usuários: ![alt-text][cadastro]
+  * Login de usuários: ![alt-text][login]
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  ### 5. Configuração do Ambiente
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  1. Criar um banco de dados vazio chamado `gerenciamento`
+  2. Executar em /Projeto: `php artisan migrate`
+  3. Acessar diretamente a rota `localhost:8000/register` para cadastrar um usuário
+  4. Obs: uma cópia do .env utilizado no desenvolvimento está contida no arquivo .env.example
+  
+  [Inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/Prototipos/inicio.png "Tela de Inicio"
+  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/login.png "Tela de Login"
+  [Pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/pacientes.png "Tela de Pacientes"
+  [Medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/medicos.png "Tela de Médicos"
+  [Consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/consultas.png "Tela de Consultas"
+  [CRUD]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/crud.png "CRUD"
