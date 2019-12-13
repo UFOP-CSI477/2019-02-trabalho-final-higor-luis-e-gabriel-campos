@@ -10,7 +10,7 @@
                     @method('put')
 
                     <div class="card ">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-primary card-bg">
                             <h4 class="card-title">{{ __('Editar Médico') }}</h4>
                             <p class="card-category"></p>
                         </div>
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
-                                <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                                <button type="submit" class="btn btn-primary btn-bg">{{ __('Salvar') }}</button>
                             </div>
                         </div>
                 </form>

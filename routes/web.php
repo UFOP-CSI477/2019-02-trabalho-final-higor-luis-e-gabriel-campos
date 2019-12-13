@@ -25,5 +25,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('consulta', 'ConsultaController', ['except' => ['show']]);
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::put('consulta/{id}/edit');
+	Route::get('/paciente/{id}/consultas','PacienteController@minhasConsultas')->name('minhasConsultas');
+	Route::get('/medico/{id}/consultas','MedicoController@minhasConsultas')->name('consultas');
+
 });
 

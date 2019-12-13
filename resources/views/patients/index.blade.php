@@ -44,8 +44,8 @@
                                     <th>
                                         {{ __('CPF') }}
                                     </th>
-                                    <th class="text-right">
-                                        {{ __('Actions') }}
+                                    <th>
+                                        {{ __('Ações') }}
                                     </th>
                                 </thead>
                                 <tbody>
@@ -69,7 +69,7 @@
                                         <td>
                                             {{ $paciente->cpf }}
                                         </td>
-                                        <td class="td-actions text-right">
+                                        <td class="td-actions">
                                             <form action="{{ route('pacientes.destroy', $paciente) }}" method="post">
                                                 @csrf
                                                 @method('delete')
@@ -78,10 +78,14 @@
                                                     <i class="material-icons">edit</i>
                                                     <div class="ripple-container"></div>
                                                 </a>
-                                                <button type="button" class="btn btn-danger btn-link" data-original-title="" title="" onclick="confirm('{{ __("Are you sure you want to delete this user?") }}') ? this.parentElement.submit() : ''">
+                                                <button type="button" class="btn btn-danger btn-link" data-original-title="" title="" onclick="confirm('{{ __("Tem certeza que deseja excluir este paciente?") }}') ? this.parentElement.submit() : ''">
                                                     <i class="material-icons">close</i>
                                                     <div class="ripple-container"></div>
                                                 </button>
+                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('minhasConsultas', $paciente->id,$paciente) }}" data-original-title="" title="">
+                                                    <i class="fa fa-search"></i>
+                                                    <div class="ripple-container"></div>
+                                                </a>
                                             </form>
                                         </td>
                                     </tr>

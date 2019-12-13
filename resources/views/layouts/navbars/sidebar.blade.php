@@ -6,7 +6,7 @@
   -->
   <div class="logo">
     <a href="{{route('home')}}" class="simple-text logo-normal">
-      {{ __('Creative Tim') }}
+      {{ __('Easy Appointment') }}
       <i class="material-icons">local_hospital</i>
     </a>
   </div>

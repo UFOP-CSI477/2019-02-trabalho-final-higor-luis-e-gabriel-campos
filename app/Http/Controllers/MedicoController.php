@@ -95,4 +95,16 @@ class MedicoController extends Controller
         $medico->delete();
         return redirect()->route('medicos.index')->withStatus(__('Medico excluido com sucesso.'));
     }
+
+    public function minhasConsultas(Medico $medico,$id){
+        $consultas = Consulta::join('medicos', 'consultas.medico_id', '=', 'medicos.id')
+        ->join('pacientes', 'consultas.paciente_id', '=', 'pacientes.id')
+        ->select(['consultas.id AS idconsulta', 'medicos.id AS idmedico','pacientes.id AS idpaciente' , 'valor', 'pacientes.nome AS paciente', 'medicos.nome AS medico', 'descricao','data'])
+        ->where('consultas.medico_id',$id)
+        ->orderBy('data', 'ASC')->get();
+        
+        return view('doctors.consultas',compact('consultas'));
+
+
+    }
 }

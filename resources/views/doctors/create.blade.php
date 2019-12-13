@@ -10,7 +10,7 @@
                     @method('post')
 
                     <div class="card ">
-                        <div class="card-header card-header-primary" >
+                        <div class="card-header card-header-primary card-bg" >
                             <h4 class="card-title">{{ __('Adicionar Médico') }}</h4>
                             <p class="card-category"></p>
                         </div>
@@ -68,8 +68,8 @@
                                 </div>
                             </div>
                             <div class="card-footer ml-auto mr-auto">
-                                <a href="{{ route('medicos.index') }}" class="btn btn-primary">{{ __('Voltar para a lista') }}</a>
-                                <button type="submit" class="btn btn-primary">{{ __('Cadastrar') }}</button>
+                                <a href="{{ route('medicos.index') }}" class="btn btn-primary btn-bg">{{ __('Voltar para a lista') }}</a>
+                                <button type="submit" class="btn btn-primary btn-bg">{{ __('Cadastrar') }}</button>
                             </div>
                         </div>
                 </form>

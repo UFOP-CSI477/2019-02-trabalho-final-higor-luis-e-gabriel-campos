@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'consulta-management', 'titlePage' => __('Gerenciar Consultas')])
+@extends('layouts.app', ['activePage' => 'patients-management', 'titlePage' => __('Gerenciar Pacientes')])
 
 @section('content')
 <div class="content">
@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header card-header-primary bg-card card-bg">
                         <h4 class="card-title ">{{ __('Consultas') }}</h4>
-                        <p class="card-category"> {{ __('Aqui você pode gerenciar as consultas') }}</p>
+                        <p class="card-category"> {{ __('Aqui você pode ver o histórico de consultas do paciente selecionado') }}</p>
                     </div>
                     <div class="card-body">
                         @if (session('status'))
@@ -27,16 +27,10 @@
                             <table class="table">
                                 <thead class=" text-primary">
                                     <th>
-                                        {{ __('ID') }}
-                                    </th>
-                                    <th>
-                                        {{ __('Data') }}
+                                        {{ __('Data/Hora') }}
                                     </th>
                                     <th>
                                         {{ __('Medico') }}
-                                    </th>
-                                    <th>
-                                        {{ __('Paciente') }}
                                     </th>
                                     <th>
                                         {{ __('Valor') }}
@@ -44,16 +38,10 @@
                                     <th>
                                         {{ __('Descrição') }}
                                     </th>
-                                    <th>
-                                        {{ __('Ações') }}
-                                    </th>
                                 </thead>
                                 <tbody>
                                     @foreach($consultas as $consulta)
                                     <tr>
-                                        <td>
-                                            {{ $consulta->idconsulta }}
-                                        </td>
                                         <td>
                                             {{ $consulta->data }}
                                         </td>
@@ -61,43 +49,22 @@
                                             {{ $consulta->medico }}
                                         </td>
                                         <td>
-                                            {{ $consulta->paciente}}
-                                        </td>
-                                        <td>
                                             {{ $consulta->valor }}
                                         </td>
                                         <td>
                                             {{ $consulta->descricao }}
-                                        </td>
-                                        <td class="td-actions">
-                                            <form action="{{ route('consulta.destroy', $consulta->idconsulta) }}" method="post">
-                                                @csrf
-                                                @method('delete')
-
-                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('consulta.edit', $consulta->idconsulta,$consulta) }}" data-original-title="" title="">
-                                                    <i class="material-icons">edit</i>
-                                                    <div class="ripple-container"></div>
-                                                </a>
-                                                <button type="button" class="btn btn-danger btn-link" data-original-title="" title="" onclick="confirm('{{ __("Tem certeza que deseja excluir esta consulta?") }}') ? this.parentElement.submit() : ''">
-                                                    <i class="material-icons">close</i>
-                                                    <div class="ripple-container"></div>
-                                                </button>
-                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
-                        <div class="row">
-                            <div class="col-12 text-right">
-                                <a href="{{ route('consulta.create') }}" class="btn btn-sm btn-primary btn-bg">{{ __('Adicionar Consulta') }}</a>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="card-footer ml-auto mr-auto">
+                        <a href="{{ route('pacientes.index') }}" class="btn btn-primary btn-paciente">{{ __('Voltar para a lista') }}</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+    @endsection

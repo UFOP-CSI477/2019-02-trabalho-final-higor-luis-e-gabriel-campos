@@ -40,8 +40,8 @@
                       <th>
                         {{ __('Creation date') }}
                       </th>
-                      <th class="text-right">
-                        {{ __('Actions') }}
+                      <th>
+                        {{ __('Ações') }}
                       </th>
                     </thead>
                     <tbody>
