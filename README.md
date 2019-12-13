@@ -53,10 +53,10 @@ Este possui funcionalidades:
 
   [login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/login.png "Tela de Login"
 
-  [pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/pacientes.png"Tela de Pacientes"
+  [pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/pacientes.png "Tela de Pacientes"
 
   [medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/medicos.png "Tela de Médicos"
 
   [consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/consultas.png "Tela de Consultas"
 
-  [crud]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/crud.png "CRUD"
+  [crud]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipo/crud.png "CRUD"
