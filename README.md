@@ -51,8 +51,8 @@
   4. Obs: uma cópia do .env utilizado no desenvolvimento está contida no arquivo .env.example
   
   [Inicio]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/Prototipos/inicio.png "Tela de Inicio"
-  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/login.png "Tela de Login"
-  [Pacientes]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/pacientes.png "Tela de Pacientes"
-  [Medicos]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/medicos.png "Tela de Médicos"
-  [Consultas]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/consultas.png "Tela de Consultas"
-  [CRUD]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-mateus-e-tulio/master/Prototypes/crud.png "CRUD"
+  [Login]: https://raw.githubusercontent.com/UFOP-CSI477/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/login.png "Tela de Login"
+  [Pacientes]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/pacientes.png "Tela de Pacientes"
+  [Medicos]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/medicos.png "Tela de Médicos"
+  [Consultas]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/consultas.png "Tela de Consultas"
+  [CRUD]: https://raw.githubusercontent.com/2019-02-trabalho-final-higor-luis-e-gabriel-campos/master/Prototipos/crud.png "CRUD"
